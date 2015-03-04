@@ -114,10 +114,14 @@ h2{font-size: 44px;font-weight:400;line-height:48px;margin: 0}
 
 .pull{font-family:'Germania One', cursive, serif;font-weight: 400;font-size: 44px; line-height:48px;}
 
-.qR{float:right;margin-right: -200px;}
-.qL{float:left;margin-left: -200px;}
-
-.padded{padding: 30px;}
+.qR {
+  float:right;
+  margin: 30px -200px 30px 30px;
+}
+.qL {
+  float:left;
+  margin: 30px 30px 30px -200px;
+}
 
 .bubbleR, .bubbleL
 {
