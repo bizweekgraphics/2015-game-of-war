@@ -330,20 +330,12 @@
 
         <script type="text/javascript">
         var s = skrollr.init({
-            render: function(data) {
-                $('#offset').text(data.curTop);
-            }
+          render: function(data) {
+            forceHeight:false,
+            $('#offset').text(data.curTop);
+          }
         });
         </script>
-
-        <script>
-      		jQuery(function($) {
-      		    skrollr.init({
-		  			forceHeight:false
-      		    });
-      		});
-        </script>
-
 
         <script type="text/javascript">
         /* make div size window */
