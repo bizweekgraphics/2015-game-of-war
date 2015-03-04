@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blank Ad Page</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body{margin:0; padding:0;}
+        .ad_box_title {display:none;}
+    </style>
+  </head>
+  <body>
+    <script>
+      var urlParams;
+      (window.onpopstate = function () {
+        var match,
+            pl     = /\+/g,  // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+        urlParams = {};
+        while (match = search.exec(query))
+          urlParams[decode(match[1])] = decode(match[2]);
+      })();
+      (function(key, url) {
+        document.write('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC="http://ad.doubleclick.net/N5262/adj/' +
+          key + ';sz=' + urlParams.size + ';position=' + urlParams.position + ';url=' + url + ';tile=' + urlParams.tile + ';u=sz=' + urlParams.size + '|rsi=|status=marketstatus1|position=' + urlParams.position + ';ord=' + urlParams.ord +
+          '?"></S' + 'CRIPT>');
+      })(urlParams.tag, "/visual-data/world-cup");
+    </script>
+  </body>
+</html>
