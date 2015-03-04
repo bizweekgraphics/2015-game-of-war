@@ -15,18 +15,20 @@
 <div class="slider"></div>
 
 <table id="comparison">
-  <tr>
-    <td>1 gold</td>
-    <td>$1</td>
-  </tr>
-  <tr>
-    <td><!--table of game of war stuff--></td>
-    <td><!--table of charitable stuff--></td>
-  </tr>
-  <tr>
-    <td>App Store</td>
-    <td>Heifer | Unicef | Aid for Africa</td>
-  </tr>
+  <thead>
+    <th><span id="gold-amount">0</span> gold</th>
+    <th>$<span id="usd-amount">0</span></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="gold-table-container"><!--table of game of war stuff--></td>
+      <td id="usd-table-container"><!--table of charitable stuff--></td>
+    </tr>
+    <tr class="footer">
+      <td>App Store</td>
+      <td>Heifer | Unicef | Aid for Africa</td>
+    </tr>
+  </tbody>
 </table>
 
 <script src="d3.min.js"></script>

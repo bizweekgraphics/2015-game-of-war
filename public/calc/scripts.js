@@ -33,4 +33,7 @@ slider.call(d3.behavior.drag()
 
 dispatch.on("sliderChange.slider", function(value) {
   sliderHandle.style("left", x(value) + "px")
+
+  d3.select("#gold-amount").text(value);
+  d3.select("#usd-amount").text(value);
 });

@@ -46,10 +46,13 @@ h2 {
 }
 
 #comparison {
-  clear: both;
+  width: 100%;
 }
 
-#comparison .column {
+#comparison th, #comparison td {
   width: 50%;
-  float: left;
+}
+
+#comparison thead, #comparison .footer {
+  text-align: center;
 }
