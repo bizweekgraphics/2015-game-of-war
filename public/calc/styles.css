@@ -38,12 +38,12 @@
 /* PAGE */
 
 body {
-  font-family: helvetica, arial, sans-serif;
   background-color:#b5aa94;
   padding: 20px;
 }
 
 #container {
+  font-family: helvetica, arial, sans-serif;
   padding: 20px;
   background: #4fad45;
   color: #8700ff;
@@ -120,4 +120,32 @@ th {
 .price-table .item a:hover {
   text-decoration: none;
   color: #ffd400;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    padding: 0;
+    border: none;
+    border-top: #ffd400 solid 4px;
+    border-bottom: #ffd400 solid 4px;
+    border-radius: 0;
+    font-size: .8em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  th {
+    font-size: 2em;
+  }
+
+  #comparison .main-column {
+    padding: 0;
+  }
 }
