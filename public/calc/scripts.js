@@ -71,11 +71,14 @@ var usdToGold = d3.scale.linear()
 var moneyScale = d3.scale.linear()
     .domain([])
 
+var dollarFormat = d3.format(",.2f");
+var intFormat = d3.format(",.0f");
+
 dispatch.on("sliderChange.slider", function(value) {
   sliderHandle.style("left", x(value) + "px")
 
-  d3.select("#gold-amount").text(usdToGold(value).toFixed());
-  d3.select("#usd-amount").text((value*100).toFixed()/100);
+  d3.select("#gold-amount").text(intFormat(usdToGold(value)));
+  d3.select("#usd-amount").text(dollarFormat(value));
 
   renderTable("gold", usdToGold(value));
   renderTable("usd", value);
@@ -98,7 +101,7 @@ function initTable(type) {
   rows.append("td").classed("quantity", true).text("#");
   rows.append("td").classed("operator", true).text("×");
   rows.append("td").classed("item", true).html(function(d) {
-    return d.item + " <a href='" + d.source + "' target='_blank'>→</a>"; 
+    return d.item + " <a href='" + d.source + "' target='_blank'>→</a>";
   });
   // rows.append("td").classed("price", true).text(function(d) { return d.price; });
 }
@@ -106,7 +109,7 @@ function initTable(type) {
 function renderTable(type, value) {
   var rows = d3.select("#"+type).selectAll("tr");
   rows.select(".quantity").text(function(d) {
-    return Math.floor(value/d.price);
+    return intFormat(Math.floor(value/d.price));
   });
   rows.classed("hidden", function(d) {
     return Math.floor(value/d.price) == 0;
