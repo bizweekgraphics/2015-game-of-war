@@ -427,7 +427,7 @@ In Leydon’s view, Upton vs. Neeson was just the first bout. &ldquo;Next Super 
         <script type="text/javascript" src="js/skrollr.js"></script>
 
         <script type="text/javascript">
-        if(false && !(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
         	var s = skrollr.init({
             	render: function(data) {
              	   $('#offset').text(data.curTop);
