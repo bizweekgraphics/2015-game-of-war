@@ -91,6 +91,10 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 	height:953px;
 	left:50%;
 	transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 #layer2{
 	z-index: 5;
@@ -98,6 +102,11 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 	height:504px;
 	left:50%;
 	transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 	}
 #layerFire{
 	z-index: 4;
@@ -106,6 +115,11 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 	background: url(../img/fire.gif) repeat-x;
 	left:34%;
 	transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 	}
 #layer3{
 	z-index: 3;
@@ -113,6 +127,11 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 	height:787px;
 	left:50%;
 	transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
 }
 #layerClouds{
 	z-index: 2;
@@ -120,6 +139,12 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 	height:800px;
 	left:50%;
 	transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+
 	background: url(../img/clouds.png);
 	background-size: 100%;
 	background-position: center;
