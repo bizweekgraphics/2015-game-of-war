@@ -72,6 +72,8 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 #subFade3{margin-top: 24px}
 #art{
 	height:1000px;
+  max-width: 2000px;
+  margin: 0 auto;
 	background: rgb(135,0,255); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(135,0,255,1) 0%, rgba(187,9,0,1) 46%, rgba(234,104,0,1) 70%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(135,0,255,1)), color-stop(46%,rgba(187,9,0,1)), color-stop(70%,rgba(234,104,0,1))); /* Chrome,Safari4+ */
