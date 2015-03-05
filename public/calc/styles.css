@@ -37,22 +37,57 @@
 
 /* PAGE */
 
-h1 {
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color:#b5aa94;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid orange;
+  border-radius: 20px;
+}
+
+h1, h2, p {
   text-align: center;
 }
 
-h2 {
-  text-align: center;
+th {
+  font-size: 2em;
+  padding-bottom: 20px;
 }
 
 #comparison {
   width: 100%;
 }
 
-#comparison th, #comparison td {
+#comparison .main-column {
   width: 50%;
+  padding-left: 40px;
+  padding-right: 40px;
+  vertical-align: top;
 }
 
 #comparison thead, #comparison .footer {
   text-align: center;
+}
+
+.price-table {
+  width: 100%;
+}
+.price-table .quantity {
+  width: 10%;
+  text-align: right;
+}
+.price-table .operator {
+  width: 10%;
+  text-align: center;
+}
+.price-table .item {
+  width: 70%;
+}
+.price-table .price {
+  width: 10%;
+  text-align: right;
+}
+.price-table .hidden {
+  display: none;
 }
