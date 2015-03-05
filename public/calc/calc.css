@@ -155,4 +155,8 @@
   #calculator .price-table .item a {
     display: none;
   }
+
+  #calculator img {
+    max-height: 30px;
+  }
 }
