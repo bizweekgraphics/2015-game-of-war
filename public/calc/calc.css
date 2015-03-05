@@ -151,4 +151,12 @@
   #calculator #comparison .main-column {
     padding: 0;
   }
+
+  #calculator .price-table .item a {
+    display: none;
+  }
+
+  #calculator img {
+    max-height: 30px;
+  }
 }

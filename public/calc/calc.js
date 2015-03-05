@@ -14,7 +14,7 @@ items["gold"] = [{"item":"Torch","type":"gold","price":20,"source":"http://www.g
 {"item":"Upgrade your Treasury","type":"gold","price":70000,"source":"http://www.appsorium.com/game_of_war/playing_guides/how_to_make_free_gold.html"},
 {"item":"Upgrade your Hall of War","type":"gold","price":200000,"source":"http://www.appsorium.com/game_of_war/playing_guides/unlocking_tier_4_troops.html"}];
 
-items["usd"] = [{"item":"Vaccination syringe, 5 mL","type":"usd","price":0.04,"source":"http://www.unicef.org/videoaudio/PDFs/EN-ImmSumm-2013.pdf"},
+items["usd"] = [{"item":"Vaccination syringe, 5 ml","type":"usd","price":0.04,"source":"http://www.unicef.org/videoaudio/PDFs/EN-ImmSumm-2013.pdf"},
 {"item":"Polio vaccine dose","type":"usd","price":0.13,"source":"https://www.flickr.com/photos/gatesfoundation/5632251253/in/set-72157625923795751"},
 {"item":"Book for schoolchild","type":"usd","price":0.38,"source":"http://www.aidforafrica.org/donate/"},
 {"item":"Meningitis vaccine dose","type":"usd","price":0.50,"source":"https://www.flickr.com/photos/gatesfoundation/5632251253/in/set-72157625923795751"},
