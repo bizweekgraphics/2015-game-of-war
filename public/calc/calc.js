@@ -35,7 +35,7 @@ items["usd"] = [{"item":"Vaccination syringe, 5 mL","type":"usd","price":0.04,"s
 var width = 500;
 
 if(window.innerWidth < 500) {
-  width = window.innerWidth - 20;
+  width = window.innerWidth - 40;
 }
 
 var x = d3.scale.log()

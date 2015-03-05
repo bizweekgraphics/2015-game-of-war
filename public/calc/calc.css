@@ -4,6 +4,7 @@
 #calculator .slider {
   position: relative;
   margin: 20px auto;
+  margin-bottom: 40px;
   height: 6px;
 }
 
@@ -44,15 +45,23 @@
   color: #8700ff;
   border: #ffd400 solid 4px;
   border-radius: 20px;
+  font-size: .8em;
 }
 
 #calculator h1 {
   font-family: 'Germania One';
   font-size: 4em;
   margin: 10px;
+  line-height: 1.2em;
 }
 
 #calculator h2 {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+#calculator p {
   margin: 0;
 }
 
@@ -72,8 +81,8 @@
 
 #calculator #comparison .main-column {
   width: 50%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   vertical-align: top;
 }
 
@@ -129,6 +138,10 @@
 
   #calculator h1 {
     font-size: 2em;
+  }
+
+  #calculator h2 {
+    font-size: 1.5em;
   }
 
   #calculator th {

@@ -36,6 +36,8 @@
         <link rel="stylesheet" type="text/css" href="css/standalone.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+        <link rel="stylesheet" href="calc/calc.css">
+
         <script src='http://www.bloomberg.com/graphics/assets/js/lib/head.js?'></script>
 
         <style type="text/css">
@@ -290,9 +292,45 @@ In Leydon’s view, Upton vs. Neeson was just the first bout. &ldquo;Next Super 
 
 <p>Game of War is expanding along with the gaming audience that’s growing the most, what the NPD Group’s study calls &ldquo;avid omni gamers,&rdquo; who play on both their tablets and their phones and are most likely to spend money on in-app purchases. The segment is up 6percent, to a 22 percent portion of the overall audience, according to the study. From the start, Machine Zone was recording long user times in Game of War. The average player, Leydon says, plays for two hours per day, in 12-minute sessions, 10 a day.</p>
 
-<div>
-  <h1>CALCULATOR</h1>
+<!---------------------->
+<!-- BEGIN CALCULATOR -->
+<!---------------------->
+
+<div id="calculator">
+
+  <h1>Game of War vs. Charity</h1>
+
+  <h2>How much are you willing to spend?</h2>
+  <p><em>$1 buys you about 280 gold in Game of War</em></p>
+  <div class="slider"></div>
+
+  <table id="comparison">
+    <thead>
+      <th class="main-column"><span id="gold-amount">0</span> gold</th>
+      <th class="main-column">$<span id="usd-amount">0</span></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="main-column"><table class="price-table" id="gold"></table></td>
+        <td class="main-column"><table class="price-table" id="usd"></table></td>
+      </tr>
+      <tr class="footer">
+        <td class="main-column">
+          <a href="https://itunes.apple.com/us/app/game-of-war-fire-age/id667728512?mt=8" target="_blank"><img src="calc/appstore.svg"></a>
+        </td>
+        <td class="main-column">
+          <a href="https://www.unicefusa.org/donate/end-preventable-child-deaths/20281" target="_blank"><img src="calc/unicef.png" height="40"></a>
+          <a href="http://www.heifer.org/gift-catalog/give-where-needed-most-donation.html?isource=HIHBJ13DN0001" target="_blank"><img src="calc/heifer.png" height="40"></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
+
+<!-------------------->
+<!-- END CALCULATOR -->
+<!-------------------->
 
 <p>Even some of the people who don’t like Game of War—more than one reviewer finds its rules incomprehensible and its commercial appeals tacky in the extreme—appreciate how richly textured it is for the small percentage of users willing to immerse themselves in the experience. &ldquo;The interesting thing about Machine Zone is in the mobile game space, they’re a very niche product compared to a Candy Crush Saga or even Clash of Clans,&rdquo; says Patrick Walker of EEDAR, a market research company. &ldquo;Their TV campaign was as broad as can be, with a supermodel and these fun battles. But the game itself is these deep relationships with alliances and resource management. It’s not like playing a shoot’em-up game or a sports game. The people interested in the game are willing to invest more time to understand these deep, complex rules.&rdquo;</p>
 
@@ -347,6 +385,7 @@ In Leydon’s view, Upton vs. Neeson was just the first bout. &ldquo;Next Super 
         <script src="http://www.bloomberg.com/graphics/assets/js/vendor/lodash.underscore.min.js?"></script>
         <script src="http://www.bloomberg.com/graphics/assets/js/vendor/d3.v3.min.js?"></script>
 
+        <script src="calc/calc.js"></script>
 
         <script type="text/javascript">
 
