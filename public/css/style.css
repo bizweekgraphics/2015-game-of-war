@@ -281,7 +281,7 @@ top: 172px;
 
 .recirc{width:80%;padding:20px 0 80px 0;margin:0 auto;}
 .recirc a{font-family:'Germania One', cursive, serif; font-size: 28px;}
-.recirc1{width: 46%;display: inline-block;padding: 10px;   vertical-align: top; }
+.recirc1{width: 50%;display: block; float: left; padding: 10px; box-sizing: border-box; vertical-align: top; }
 .recirc1 img{width:100%;height: auto;}
 
 
@@ -506,6 +506,8 @@ hr{background: #270402;height:4px;border:0;margin:40px auto;}
 	.panelRow{min-width:400px;}
 	.panel img{max-width: 200px;}
 	.try2 img{width: 100%}
+
+  .recirc1 {width: 100%;}
 }
 
 
