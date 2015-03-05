@@ -97,7 +97,9 @@ function initTable(type) {
 
   rows.append("td").classed("quantity", true).text("#");
   rows.append("td").classed("operator", true).text("×");
-  rows.append("td").classed("item", true).text(function(d) { return d.item; });
+  rows.append("td").classed("item", true).html(function(d) {
+    return d.item + " <a href='" + d.source + "' target='_blank'>→</a>"; 
+  });
   // rows.append("td").classed("price", true).text(function(d) { return d.price; });
 }
 
