@@ -3,8 +3,8 @@
 
 .slider {
   position: relative;
-  margin: 0 auto;
-  height: 50px;
+  margin: 20px auto;
+  height: 6px;
 }
 
 .slider-tray {
@@ -40,10 +40,24 @@
 body {
   font-family: helvetica, arial, sans-serif;
   background-color:#b5aa94;
-  margin: 20px;
   padding: 20px;
-  border: 2px solid orange;
+}
+
+#container {
+  padding: 20px;
+  background: #ffd400;
+  border: #FF9000 solid 4px;
   border-radius: 20px;
+}
+
+h1 {
+  font-family: 'Germania One';
+  font-size: 4em;
+  margin: 10px;
+}
+
+h2 {
+  margin: 0;
 }
 
 h1, h2, p {
@@ -51,8 +65,9 @@ h1, h2, p {
 }
 
 th {
-  font-size: 2em;
+  font-size: 3em;
   padding-bottom: 20px;
+  font-family: 'Germania One';
 }
 
 #comparison {
@@ -74,7 +89,7 @@ th {
   width: 100%;
 }
 .price-table .quantity {
-  width: 10%;
+  width: 20%;
   text-align: right;
 }
 .price-table .operator {
@@ -85,7 +100,7 @@ th {
   width: 70%;
 }
 .price-table .price {
-  width: 10%;
+  width: 0%;
   text-align: right;
 }
 .price-table .hidden {
