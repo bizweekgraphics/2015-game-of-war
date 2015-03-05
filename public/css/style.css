@@ -17,13 +17,13 @@
                           ,'        ,'  ,'    /
                          ,-'      ,' .-'     /
                       ,-'                   /
-                    ,:________________Steph_/
+                    ,:________Steph________/
 
 */
 
 body,html {
   background-color:#b5aa94;
-  color:#270402;
+  color:#270402; 
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -51,12 +51,12 @@ a:hover{color: #cc00ff}
 	}
 
 h1{font-size: 140px;font-weight:400;line-height:150px;margin: 0;}
-h2{font-size: 44px;font-weight:400;line-height:48px;margin: 0}
-.subhead {font-size:30px;text-align:center;margin-top:60px;color:#ffd400}
+h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
+.subhead {font-family: "BWHaasText-55Roman",Helvetica, Arial, sans-serif;font-size:20px;text-align:center;margin-top:50px;color:#ffd400}
 
 
 #title{
-	font-family:'Germania One', cursive, serif;
+	font-family:'Germania One', cursive, serif; 
 	color:#000;
 	text-align: center;
 	max-width: 1100px;
@@ -69,8 +69,9 @@ h2{font-size: 44px;font-weight:400;line-height:48px;margin: 0}
 	z-index:9;
 }
 
+#subFade3{margin-top: 24px}
 #art{
-	height:1200px;
+	height:1000px;
 	background: rgb(135,0,255); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(135,0,255,1) 0%, rgba(187,9,0,1) 46%, rgba(234,104,0,1) 70%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(135,0,255,1)), color-stop(46%,rgba(187,9,0,1)), color-stop(70%,rgba(234,104,0,1))); /* Chrome,Safari4+ */
@@ -83,45 +84,64 @@ h2{font-size: 44px;font-weight:400;line-height:48px;margin: 0}
 	position: relative;
 	}
 
-#layer1,#layer2,#layer3{position:absolute;}
+#layer1,#layer2,#layer3,#layerFire{position:absolute;}
 #layer1{
 	z-index: 5;
 	width: 800px;
 	height:953px;
-  left: 50%;
-  transform: translate(-50%,0);
+	left:50%;
+	transform: translate(-50%, 0);
 }
 #layer2{
 	z-index: 4;
 	width:2000px;
 	height:504px;
-  left: 50%;
-  transform: translate(-50%,0);
+	left:50%;
+	transform: translate(-50%, 0);
+	}
+#layerFire{
+	z-index: 3;
+	width:500px;
+	height:114px;
+	background: url(../img/fire.gif) repeat-x;
+	left:34%;
+	transform: translate(-50%, 0);
 	}
 #layer3{
-	z-index: 3;
+	z-index: 2;
 	width:2000px;
 	height:787px;
-  left: 50%;
-  transform: translate(-50%,0);
+	left:50%;
+	transform: translate(-50%, 0);
 }
 
 
+.blaze{
+	background: url(../img/fire.gif) repeat-x;
+	height: 114px;
+	width: 100%;
+	position: absolute; 
+	bottom: -10px; 
+	left: 0px;
+	display:block;
+}
 
-
+.inlineImg{max-width: 460px;}
+.inlineImg img{width: 100%;}
 .small{font-family:'Germania One', cursive, serif; font-weight: 400;font-size:12px;line-height: 14px;margin-top: 6px;}
-
+.caption{margin-top: 10px;position:relative;font-size: 14px;}
 
 .pull{font-family:'Germania One', cursive, serif;font-weight: 400;font-size: 44px; line-height:48px;}
 
-.qR {
-  float:right;
-  margin: 30px -200px 30px 30px;
-}
-.qL {
-  float:left;
-  margin: 30px 30px 30px -200px;
-}
+.qR{float:right;margin: 26px -200px 26px 26px;}
+.qL{float:left;margin: 26px 26px 26px -200px }
+
+
+.padded{padding: 22px;}
+
+.panelRow{min-width:580px;display: inline-block;vertical-align: top;text-align: center }
+.panel{display: inline-block;vertical-align: text-top;}
+.panel img{max-width: 280px;padding: 5px;}
 
 .bubbleR, .bubbleL
 {
@@ -136,7 +156,7 @@ border-radius: 20px;
 border: #FF9000 solid 4px;
 }
 
-.bubbleR:after
+.bubbleR:after 
 {
 content: '';
 position: absolute;
@@ -150,7 +170,7 @@ left: -16px;
 top: 175px;
 }
 
-.bubbleR:before
+.bubbleR:before 
 {
 content: '';
 position: absolute;
@@ -164,7 +184,7 @@ left: -23px;
 top: 172px;
 }
 
-.bubbleL:after
+.bubbleL:after 
 {
 content: '';
 position: absolute;
@@ -178,7 +198,7 @@ right: -16px;
 top: 175px;
 }
 
-.bubbleL:before
+.bubbleL:before 
 {
 content: '';
 position: absolute;
@@ -201,11 +221,12 @@ top: 172px;
 
 
 
-.break{margin: 0 auto; max-width: 1200px;}
-.break img{width: 100%;}
-
-
-
+.break{margin: 0 auto; max-width: 1200px;text-align: center;}
+.break img{width: 100%;display: block;margin: 0;}
+#subFade1,#subFade2,#subFade3{opacity: 0;}
+.centerImg{margin: 0 auto;}
+.try2 img{width: 50%;display: inline-block;vertical-align: top;margin:0}
+	
 .dek {
   font-family: "BWHaasText-55Roman",Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -355,21 +376,81 @@ hr{background: #270402;height:4px;border:0;margin:40px auto;}
 /* queries */
 
 @media only screen and (max-width: 1160px) {
+	body{BACKGROUND:red;}
+	
+	.qR{float:right;margin: 26px 0 26px 26px;}
+	.qL{float:left;margin: 26px 26px 26px 0 }
+	.dek {margin:0 auto;padding:0 12px}	
+	#title{
+		max-width: 800px;
+		height:460px;
+		margin-top: -240px;
+		margin-left:-400px;
+	}
+	h1{font-size: 96px;line-height:100px;}
+	h2{font-size: 34px;line-height:36px;}
 }
 
 
 
 @media only screen and (max-width: 728px)  {
+	body{BACKGROUND:orange;}
+	
+	
+	h1{font-size: 84px;line-height:90px;}
+	h2{font-size: 30px;line-height:32px;}
+	#title{
+		max-width: 600px;
+		height:400px;
+		margin-top: -200px;
+		margin-left:-300px;
+	}
+	#subFade3{margin-top: 20px}
+	.pull{font-size: 34px; line-height:36px;}
+	.bubbleR, .bubbleL{min-height: 200px;width: 280px;}
+
 
 }
-@media only screen and (max-width: 680px)  {
+
+@media only screen and (max-width: 620px)  {
+	body{BACKGROUND:green;}
+	
+	.dek {font-size: 18px; line-height: 22px;}
+	.qR{float:none;margin: 12px;}
+	.qL{float:none;margin: 12px; }
+	.qR, .qL img{width: 100%}
+
+	.bubbleR, .bubbleL
+	{	width: 90%;min-height: 100px;
+	position: relative;	}
+	.bubbleR:after 	{	display: none;	}
+	.bubbleR:before 	{	display: none;	}
+	.bubbleL:after 	{	display: none;	}
+	.bubbleL:before 	{	display: none;	}
+	.panelRow{min-width:480px;}
+	.panel img{max-width: 240px;}
+	
+
 
 
 }
 
 
 /* MOBILE window less than 568px wide */
-@media only screen and (max-width: 568px)  {
+@media only screen and (max-width: 520px)  {
+	body{BACKGROUND:blue;}
+	
+	.dek {font-size: 16px; line-height: 20px;}
+	h1{font-size: 50px;line-height:52px;}
+	h2{font-size: 22px;line-height:24px;}
+	#title{
+		max-width: 400px;
+		height:300px;
+		margin-top: -150px;
+		margin-left:-200px;
+	}
+	.panelRow{min-width:400px;}
+	.panel img{max-width: 200px;}
 }
 
 
