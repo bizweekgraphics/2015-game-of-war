@@ -147,7 +147,7 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 
 .qR{float:right;margin: 26px -200px 26px 26px;}
 .qL{float:left;margin: 26px 26px 26px -200px }
-
+.qR img, .qL img { max-width: 100%; }
 
 .padded{padding: 22px;}
 
