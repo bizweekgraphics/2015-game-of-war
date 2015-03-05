@@ -45,7 +45,7 @@ var x = d3.scale.log()
 
 var dispatch = d3.dispatch("sliderChange");
 
-var slider = d3.select(".slider")
+var slider = d3.select("#calculator .slider")
     .style("width", width + "px");
 
 var sliderTray = slider.append("div")
@@ -81,8 +81,8 @@ var intFormat = d3.format(",.0f");
 dispatch.on("sliderChange.slider", function(value) {
   sliderHandle.style("left", x(value) + "px")
 
-  d3.select("#gold-amount").text(intFormat(usdToGold(value)));
-  d3.select("#usd-amount").text(dollarFormat(value));
+  d3.select("#calculator #gold-amount").text(intFormat(usdToGold(value)));
+  d3.select("#calculator #usd-amount").text(dollarFormat(value));
 
   renderTable("gold", usdToGold(value));
   renderTable("usd", value);
@@ -96,7 +96,7 @@ function init() {
 init();
 
 function initTable(type) {
-  var table = d3.select("#"+type);
+  var table = d3.select("#calculator #"+type);
 
   var rows = table.selectAll("tr")
       .data(items[type])
@@ -111,7 +111,7 @@ function initTable(type) {
 }
 
 function renderTable(type, value) {
-  var rows = d3.select("#"+type).selectAll("tr");
+  var rows = d3.select("#calculator #"+type).selectAll("tr");
   rows.select(".quantity").text(function(d) {
     return intFormat(Math.floor(value/d.price));
   });

@@ -1,13 +1,13 @@
 /* SLIDER */
 /* http://bl.ocks.org/shancarter/5979700 */
 
-.slider {
+#calculator .slider {
   position: relative;
   margin: 20px auto;
   height: 6px;
 }
 
-.slider-tray {
+#calculator .slider-tray {
   position: absolute;
   width: 100%;
   height: 6px;
@@ -18,12 +18,12 @@
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
-.slider-handle {
+#calculator .slider-handle {
   position: absolute;
   top: 3px;
 }
 
-.slider-handle-icon {
+#calculator .slider-handle-icon {
   width: 14px;
   height: 14px;
   border: solid 1px #aaa;
@@ -35,14 +35,9 @@
   left: -7px;
 }
 
-/* PAGE */
+/* CALCULATOR */
 
-body {
-  background-color:#b5aa94;
-  padding: 20px;
-}
-
-#container {
+#calculator {
   font-family: helvetica, arial, sans-serif;
   padding: 20px;
   background: #4fad45;
@@ -51,84 +46,79 @@ body {
   border-radius: 20px;
 }
 
-h1 {
+#calculator h1 {
   font-family: 'Germania One';
   font-size: 4em;
   margin: 10px;
 }
 
-h2 {
+#calculator h2 {
   margin: 0;
 }
 
-h1, h2, p {
+#calculator h1, #calculator h2, #calculator p {
   text-align: center;
 }
 
-th {
+#calculator th {
   font-size: 3em;
   padding-bottom: 20px;
   font-family: 'Germania One';
 }
 
-#comparison {
+#calculator #comparison {
   width: 100%;
 }
 
-#comparison .main-column {
+#calculator #comparison .main-column {
   width: 50%;
   padding-left: 40px;
   padding-right: 40px;
   vertical-align: top;
 }
 
-#comparison thead, #comparison .footer {
+#calculator #comparison thead, #calculator #comparison .footer {
   text-align: center;
 }
 
-#comparison .footer td {
+#calculator #comparison .footer td {
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
-.price-table {
+#calculator .price-table {
   width: 100%;
 }
-.price-table .quantity {
+#calculator .price-table .quantity {
   width: 20%;
   text-align: right;
 }
-.price-table .operator {
+#calculator .price-table .operator {
   width: 10%;
   text-align: center;
 }
-.price-table .item {
+#calculator .price-table .item {
   width: 70%;
 }
-.price-table .price {
+#calculator .price-table .price {
   width: 0%;
   text-align: right;
 }
-.price-table .hidden {
+#calculator .price-table .hidden {
   display: none;
 }
 
-.price-table .item a {
+#calculator .price-table .item a {
   text-decoration: none;
   color: #388432;
 }
-.price-table .item a:hover {
+#calculator .price-table .item a:hover {
   text-decoration: none;
   color: #ffd400;
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  #container {
+  #calculator {
     padding: 0;
     border: none;
     border-top: #ffd400 solid 4px;
@@ -137,15 +127,15 @@ th {
     font-size: .8em;
   }
 
-  h1 {
+  #calculator h1 {
     font-size: 2em;
   }
 
-  th {
+  #calculator th {
     font-size: 2em;
   }
 
-  #comparison .main-column {
+  #calculator #comparison .main-column {
     padding: 0;
   }
 }
