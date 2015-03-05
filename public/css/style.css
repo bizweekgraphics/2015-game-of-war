@@ -166,7 +166,7 @@ h2{font-size: 40px;font-weight:400;line-height:44px;margin: 0}
 .inlineImg{max-width: 460px;}
 .inlineImg img{width: 100%;}
 .small{font-family:'Germania One', cursive, serif; font-weight: 400;font-size:12px;line-height: 14px;margin-top: 6px;}
-.caption{margin-top: 10px;position:relative;font-size: 14px;}
+.caption{margin-top: 10px;position:relative;font-size: 14px;line-height:16px;}
 
 .pull{font-family:'Germania One', cursive, serif;font-weight: 400;font-size: 44px; line-height:48px;}
 
